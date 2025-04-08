@@ -7,6 +7,7 @@ google-ID: ""
 menu:
   - { name: "About", url: "about" }
   - { name: "Contact", url: "contact" }
+  - { name: "Writing", url: "writing" }
 
 social:
   - { icon: "github", link: "https://www.github.com/heronsilva" }
