@@ -6,11 +6,11 @@ google-ID: ""
 
 menu:
   - { name: "About", url: "about" }
-  - { name: "Contact", url: "contact.html" }
+  - { name: "Contact", url: "contact" }
 
 social:
   - { icon: "github", link: "https://www.github.com/heronsilva" }
-  - { icon: "linkedin", link: "http://www.linkedin.com/in/heronsilva" }
+  - { icon: "linkedin", link: "https://www.linkedin.com/in/heronsilva" }
   - { icon: "envelope", link: "mailto:heron.code@outlook.com" }
   # - {icon: 'rss-square', link: '/feed.xml'}
   # - {icon: 'rss-square', link: '/rss-feed.xml'}
