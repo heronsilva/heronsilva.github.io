@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Mise En Place: The Last Version Manager You'll Ever Need"
+date: 2025-04-07
+updated_date: 2025-04-13
 author: 'Heron Silva'
-categories: journal
+categories: "journal"
 tags: [ mise, node, python, git ]
 image: "mise-en-place.png"
 ---
@@ -15,7 +17,7 @@ Ever found yourself debugging an issue for hours, only to realize you're using t
 to get your Python environment just right? Version managers promise to solve these issues, but managing multiple tools
 can be a headache—until now.
 
-Enter [mise-en-place (mise)](https://mise.jdx.dev): an all-in-one package version manager designed for simplicity,
+Enter [mise-en-place (mise)](https://mise.jdx.dev){:target="_blank"}: an all-in-one package version manager designed for simplicity,
 performance, and compatibility. With mise, you can forget about juggling multiple version managers and focus on coding.
 
 #### What is mise?
@@ -140,14 +142,21 @@ eval "$(mise activate bash)"  # or zsh/fish
 
 1. **Setting a Global Version**
    ```sh
-   mise global node@18 python@3.11
+   mise use --global node@18 python@3.11
    ```
 
 2. **Setting a Project-Specific Version**
    ```sh
-   mise use --local node@20
-   mise use --local python@3.12
+   mise use --pin node@20 --path .
+   mise use --pin python@3.12 --path .
    ```
+
+    Or, even more explicitly:
+    ```sh
+    mise use --pin node@20 --path ~/Projects/github/node-project
+    ```
+
+    This creates or updates a `.tool-versions` or `.mise.toml` file _in the current directory_. Without `--path`, `mise` might save it to the nearest parent folder instead.
 
 3. **Checking Installed Versions**
    ```sh

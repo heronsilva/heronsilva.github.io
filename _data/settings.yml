@@ -23,3 +23,4 @@ pagination:
 sharing_button_prompt: "Feel free to share!"
 related_posts: "You may also like:"
 post_date_prefix: "Written on"
+post_last_modified_prefix: "Last updated on"
